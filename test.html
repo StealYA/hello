@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			display: flex;
+			width:200px;
+			height: 50px;
+			justify-content: flex-end;
+			align-items: center;
+		}
+		.box1 {
+			padding:10px;
+			border: 1px solid red;
+		}
+		.box2 {
+			padding:10px;
+			border:1px solid blue;
+		}
+	</style>
+</head>
+
+<div class="box">
+	<div class="box1">12312</div>
+	<div class="box2">45</div>
+</div>
+
+
+<input type="text" name="start" id="start">
+<input type="text" name="start" id="end">
+<body>
+	<!-- <script>
+		var oStart = document.getElementById('start');
+		var oEnd = document.getElementById('end');
+		var arr = [];
+		function cha(a,b){
+			return a-b
+		}
+		oEnd.onblur = function(){
+			var stValue = Number(oStart.value);
+			var enValue = Number(oEnd.value);
+			console.log(enValue);
+			if (!isNaN(stValue)&&!isNaN(enValue)&&stValue<enValue) {
+				alert('正确');
+			}
+			else if(!isNaN(stValue)&&!isNaN(enValue)&&stValue>enValue){
+				alert('start 不小于 end');
+				return;
+			}
+			else{
+				alert('请输入数字');
+				return;
+			}
+			for (var i=0;i<10;i++) {
+				var randValue = stValue*1+(enValue-stValue)*Math.random();
+				if(randValue<enValue){
+					arr.push(randValue);
+				}
+			}
+			console.log(arr.sort(cha));
+		}
+	</script> -->
+</body>
+</html>
